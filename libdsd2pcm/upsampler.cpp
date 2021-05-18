@@ -18,11 +18,12 @@
     along with SACD.  If not, see <http://www.gnu.org/licenses/gpl-3.0.txt>.
 */
 
-#include <xmmintrin.h>  // SSE2 inlines
+
 #include <math.h>
 #include <string.h>
 #include <assert.h>
 #include "upsampler.h"
+#include "simd.h"
 
 // FirHistory
 FirHistory::FirHistory(unsigned int fir_size)

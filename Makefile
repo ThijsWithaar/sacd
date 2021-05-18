@@ -5,7 +5,7 @@ ARCH = $(shell getconf LONG_BIT)
 
 CXX = g++
 
-CXXFLAGS_32 = -msse2
+CXXFLAGS_32 = -march=native
 CXXFLAGS_64 =
 CXXFLAGS = $(CXXFLAGS_$(ARCH)) -std=c++11 -Wall -O3
 #CXXFLAGS += -g -ggdb3
